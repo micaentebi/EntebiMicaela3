@@ -3,6 +3,8 @@
 @import "abstracts/mixin";
 @import "abstracts/extend";
 @import "abstracts/fonts";
+@import "abstracts/nav";
+
 
 *{
     margin: 0;
@@ -10,8 +12,10 @@
     box-sizing: border-box;
 } 
 
+
 .bg-colorNav {
     text-align: center;
+
     .logo {
         width: 100%;
         height: 50%;
@@ -63,6 +67,7 @@
                     font-weight: lighter;
                     margin-bottom: 0%  ;
                 }
+                
                 a{
                 text-decoration: none;
                 align-items: center;
@@ -79,10 +84,27 @@
                 margin-inline-start: 0;
                 font-weight: lighter;
                 margin-bottom: 0%  ;
+                animation-duration: 2s;
+                animation-name: slidein;
+                    
+            }
+            h2{
+                animation-duration: 3s;
+                animation-name: slidein;  
             }
             
         }
-    
+        @keyframes slidein {
+            from {
+              margin-left: 100%;
+              width: 300%;
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+          }
 
 footer {
    color: $color-letras;
@@ -137,6 +159,29 @@ footer {
         }   
         }
     }
+    
+    .consultorio{
+            text-align: center;
+            h3{
+            color:$color-letras ;
+            font-weight:lighter ;
+            font-size: 200%;
+            margin-bottom: 0%;
+            font-family: 'miFuente' ;
+            font-style: italic;   
+            text-align: center;
+             } 
+        iframe{
+            text-align: center;
+            margin-bottom: 1%;
+        }
+        }
+    
+    .instagram-media{
+            text-align: center;
+            margin-left: 39%;
+         }
+
     .contacto-ig{
         margin-left: 42%;
         margin-bottom: 1%;
@@ -151,9 +196,7 @@ footer {
         font-family: 'fuente2';
         color: $color-letras;
 
-       }
-     
-        
+       } 
     }
 
     /*Incio de sesion*/
@@ -221,6 +264,7 @@ footer {
         column-gap: 0.5rem;
         margin: 2rem 1rem;
         .img-uno {
+            
             grid-area: img-uno;
         }
         .img-dos {
@@ -276,6 +320,10 @@ footer {
         .contenedorPancakes{
             position:relative  ;
             margin-top: 50px;
+            border: $color-letras dotted 3px ;
+            margin: 1%;
+            padding: 1%;
+            
             h4{
                 font-size: 1rem;
                 font-family: "B612 Mono", monospace;

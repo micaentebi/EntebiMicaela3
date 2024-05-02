@@ -93,8 +93,24 @@
   margin-inline-start: 0;
   font-weight: lighter;
   margin-bottom: 0%;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+.bg-colorNav h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 footer {
   color: #A2896C;
   font-size: 15px;
@@ -144,6 +160,28 @@ footer {
 }
 .contenedorCaro main .biografia span {
   font-weight: 800;
+}
+
+.consultorio {
+  text-align: center;
+}
+.consultorio h3 {
+  color: #A2896C;
+  font-weight: lighter;
+  font-size: 200%;
+  margin-bottom: 0%;
+  font-family: "miFuente";
+  font-style: italic;
+  text-align: center;
+}
+.consultorio iframe {
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.instagram-media {
+  text-align: center;
+  margin-left: 39%;
 }
 
 .contacto-ig {
@@ -264,6 +302,9 @@ footer {
 .mainRecetas .contenedorPancakes {
   position: relative;
   margin-top: 50px;
+  border: #A2896C dotted 3px;
+  margin: 1%;
+  padding: 1%;
 }
 .mainRecetas .contenedorPancakes h4 {
   font-size: 1rem;
