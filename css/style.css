@@ -311,7 +311,7 @@ footer {
   color: #A2896C;
   font-size: 250%;
   text-align: center;
-  font-family: cursive;
+  font-family: "B612 Mono", monospace;
   margin-top: 0%;
   margin-inline-start: 0;
   font-weight: lighter;
@@ -397,9 +397,18 @@ footer {
     justify-content: center;
     text-align: center;
     height: 50%;
+    width: 90%;
     background-color: rgba(224, 194, 166, 0.7960784314);
     box-shadow: 5px 1px 20px rgba(170, 126, 84, 0.7960784314);
     flex-direction: row;
+  }
+  .contenedor .item a {
+    justify-content: center;
+    font-size: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 30%;
   }
   .contenedorCaro {
     align-content: center;
