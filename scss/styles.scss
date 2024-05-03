@@ -36,7 +36,9 @@
                     width: 100%;
                     height: 50%;
                     object-fit: cover;
+                    
                 }
+
             }
             .img1 {
                 grid-area: img-uno;
@@ -66,6 +68,7 @@
                     margin-inline-start: 0;
                     font-weight: lighter;
                     margin-bottom: 0%  ;
+                    font-family: "B612 Mono", monospace 
                 }
                 
                 a{
@@ -76,10 +79,10 @@
         }
     }
             h1{
+                font-family: "B612 Mono", monospace ;
                 color: $color-letras ;
                 font-size: 250%;
                 text-align: center;
-                font-family: cursive;
                 margin-top: 0%;
                 margin-inline-start: 0;
                 font-weight: lighter;
@@ -89,6 +92,7 @@
                     
             }
             h2{
+                font-family: "B612 Mono", monospace;
                 animation-duration: 3s;
                 animation-name: slidein;  
             }
@@ -130,6 +134,8 @@ footer {
     margin-left:10%;
     margin-top: 0%;
     .fotoCaro{
+        display: flex;
+        justify-content: center;
         text-align: center;
         margin-top: 0%;}
     main{
@@ -174,17 +180,32 @@ footer {
         iframe{
             text-align: center;
             margin-bottom: 1%;
+            justify-content: center;
         }
         }
-    
-    .instagram-media{
+
+        .instagram{
+            color:$color-letras ;
+            font-weight:lighter ;
+            font-size: 200%;
+            margin-bottom: 0%;
+            font-family: 'miFuente' ;
+            font-style: italic;   
             text-align: center;
-            margin-left: 39%;
-         }
+             } 
+        
+        
+        .instagram-media{
+           display: flex ;
+           justify-content: center;            
+            }
+        
+ 
 
     .contacto-ig{
-        margin-left: 42%;
-        margin-bottom: 1%;
+        justify-content: center;
+        font-family: "B612 Mono", monospace ;
+
        a{
         text-decoration: none;
         img{ 
@@ -302,6 +323,10 @@ footer {
                     object-fit: cover;
                 }
             }
+            img:hover{
+                animation-name: pulse;
+                animation-duration: 2s;
+            }
      }
 
      .recetas{
@@ -396,15 +421,88 @@ footer {
             a {
                 img{
                     width: 100%;
-                    height: 60%;
+                    height: 50%;
                     object-fit: cover 
                 }
             }
+            .item{
+                    justify-content: center;
+                    text-align: center;
+                    height: 50%;
+                    background-color:#e0c2a6cb ;
+                    box-shadow: 5px 1px 20px $subcolor-letras;
+                    flex-direction: row;
             }
+            }
+            .contenedorCaro{
+                align-content: center;
+                justify-content: center;
+                display:flex ;
+                margin-top: 0%;
+                flex-wrap: wrap;
+                .fotoCaro{
+                    display: flex;
+                    width:1% ;
+                    height:1%;
+                    justify-content: center;
+                    
+                }
+                iframe{
+                    justify-content: center;
+                }
+            }
+            .form-iniciarsesion{
+                width: 60%;
+                height: 60%;
+                h5{
+                    color: $color-letras ;
+                    font-size: 150%;
+                    text-align: center;
+                    font-family: cursive;
+                    margin-top: 0%;
+                    margin-inline-start: 0;
+                    font-weight: lighter;
+                    margin-bottom: 0%  ;
+                }
+                .control{
+                    width: 90%;
+                    margin-top: 0%;
+                    align-content: center;
+                    justify-content: center;
+                    padding-left: 19px;
+                    margin-left: 4%;
+                    margin-bottom: 2%;
+                    background-color:#f7e1cc ;
+                    color: $color-letras;
+                    box-shadow: 1px 1px 1px $subcolor-letras ;
+                    border: $subcolor-letras ;
+                    font-size: 15px;
+                    font-weight:bolder
+                }
+                .boton{ 
+                    width: 80%; 
+                    height: 40%;
+                    margin-top: 0%;
+                    color:#aa7e54cb;
+                    margin-left: 10%;
+                    margin-bottom: 4%;
+                    
+                 }
+             }
 
      }
 
      @media screen and (min-width:601px) and (max-width:884px) {
+        .contenedor{ 
+            .item{
+                justify-content: center;
+                align-items: center;
+                height: 50%;
+                background-color:#e0c2a6cb ;
+                box-shadow: 5px 1px 20px $subcolor-letras;
+                flex-direction: row;
+        }
+        }
         .contenedor-recetas{
             display: grid;
             height: 160vh;
@@ -459,25 +557,33 @@ footer {
                    
         }
         .contenedorCaro{
-            display: flex;
-            margin-left:10%;
+            align-content: center;
+            justify-content: center;
+            display:flex ;
             margin-top: 0%;
+            flex-wrap: wrap;
+            .fotoCaro{
+                display: flex;
+                width:1% ;
+                height:1%;
+                justify-content: center;
+                
+            }
             main{
                 .biografia{
                     color: $subcolor-letras; 
-                    font-size: 10px;
+                    font-size: 15px;
                     font-family: "B612 Mono", monospace;
                     font-weight: 400;
                     font-style: normal;
                     margin-top: 3%;
-                    margin-right: 30%;
+                    justify-content: center;
                     font-weight: lighter;
                     text-align: justify;   
                     span{
                          font-weight:800 ; 
                     }
                 }
-            
             }   
         }
      }
